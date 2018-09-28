@@ -22,6 +22,10 @@
 
 [http://127.0.0.1:80](http://127.0.0.1:80)  
 
+**Внимание!** Обратить внимание на заголовок Content-Type.  
+По умолчанию браузер может выставить text/html, в таком случае вы получите HTTP ERROR 406.  
+Необходимо принудительно установить значение application/json.  
+Для этого советую использовать любой REST клиент (Например [Insomnia](https://github.com/getinsomnia/insomnia)).  
 
 Разработка  
 ========================
@@ -130,9 +134,9 @@ imports:
     - { resource: ../../src/AppBundle/Resources/config/services.yml }
 ```
 
-## Внесение изменений и добавление новых маршрутов в API
+<h3>Resources:</h3>  
 
-
-
-
-
+> **http://editor.swagger.io/** - Swagger Editor.  
+> **https://github.com/swagger-api** - Swagger API.  
+> **https://github.com/symfony/symfony** - Symfony PHP framefork. 
+> **https://github.com/getinsomnia/insomnia** - Insomnia REST client.  
