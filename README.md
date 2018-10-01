@@ -45,12 +45,10 @@
 - Добавить зависимость в `composer.json`:   
 ```json
 {
-    // ...
     "repositories": [{
         "type": "path",
         "url": "src/Swagger/Server/"
     }]
-    // ...
 }
 ```
 
