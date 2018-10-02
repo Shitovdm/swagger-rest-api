@@ -20,14 +20,18 @@
 
 ## Использование
 
-- HTTP WEB  
-
-[http://127.0.0.1:80](http://127.0.0.1:80)  
-
 **Внимание!** Обратить внимание на заголовок Content-Type.  
 По умолчанию браузер может выставить text/html, в таком случае вы получите HTTP ERROR 406.  
 Необходимо принудительно установить значение application/json.  
 Для этого советую использовать любой REST клиент (Например [Insomnia](https://github.com/getinsomnia/insomnia)).  
+
+[https://127.0.0.1/api](https://127.0.0.1/api)  
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**directService**](https://github.com/Shitovdm/Swagger_REST_API/blob/master/src/Swagger/Server/Resources/docs/Api/ServiceApiInterface.md#directService) | **GET** /api/service/direct | Service type - direct
+[**electronicService**](https://github.com/Shitovdm/Swagger_REST_API/blob/master/src/Swagger/Server/Resources/docs/Api/ServiceApiInterface.md#electronicService) | **GET** /api/service/electronic | Service type - electronic
+[**infoService**](https://github.com/Shitovdm/Swagger_REST_API/blob/master/src/Swagger/Server/Resources/docs/Api/ServiceApiInterface.md#infoService) | **GET** /api/service/info | Service information
 
 Разработка  
 ========================
