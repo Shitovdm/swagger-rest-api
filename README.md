@@ -140,5 +140,5 @@ imports:
 
 > **http://editor.swagger.io/** - Swagger Editor.  
 > **https://github.com/swagger-api** - Swagger API.  
-> **https://github.com/symfony/symfony** - Symfony PHP framefork. 
+> **https://github.com/symfony/symfony** - Symfony PHP framefork.  
 > **https://github.com/getinsomnia/insomnia** - Insomnia REST client.  
