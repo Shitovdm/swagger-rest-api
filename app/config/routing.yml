@@ -1,3 +1,5 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+swagger_server:
+    resource: "@SwaggerServerBundle/Resources/config/routing.yml"
