@@ -1,0 +1,5 @@
+services:
+    appbundle.api.service:
+        class: AppBundle\Api\ServiceApi
+        tags:
+            - { name: "swagger_server.api", api: "service" }
