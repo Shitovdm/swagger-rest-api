@@ -9,7 +9,9 @@
 - Перейти в папку с проектом:  
 ```cd ./{PATH}```
 
-- Установить [Composer](http://getcomposer.org/download)  
+- Установить [Composer](http://getcomposer.org/download) 
+- Обновить/установить зависимости:   
+```composer update```
 
 ## Запуск
 
@@ -29,6 +31,7 @@
 
 Разработка  
 ========================
+[Инструкция от Swagger](https://github.com/Shitovdm/Swagger_REST_API/blob/master/src/Swagger/Server/README.md)  
 
 ## Установка Symfony
 Актуальная версия фреймворка на момент написания 3.4.
@@ -36,6 +39,7 @@
 ```composer create-project symfony/framework-standard-edition```
 
 ## Установка Swagger
+
 Актуальная версия на момент написания 2.  
 Возможна установка после добавления сгенерированного кода API.
 
@@ -84,6 +88,7 @@ swagger_server:
 ```
 
 ## Реализация интерфейсов API
+[Автоматически сгенерированная инструкция](https://github.com/Shitovdm/Swagger_REST_API/blob/master/src/Swagger/Server/Resources/docs/Api/ServiceApiInterface.md)
 
 - Создать новый бандл AppBundle (если не создан)
 
