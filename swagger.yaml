@@ -1,0 +1,82 @@
+swagger: "2.0"
+info:
+  description: "REST API"
+  version: "1.0.1"
+  title: "REST API for your application"
+  contact:
+    email: "shitov.dm@gmail.com"
+host: "127.0.0.1"
+basePath: "/api"
+tags:
+- name: "service"
+  description: "Quality of service questionnaire"
+  externalDocs:
+    description: "Description of the interaction"
+    url: "127.0.0.1"
+schemes:
+- "https"
+- "http"
+paths:
+  /api/service/info:
+    get:
+      tags:
+      - "service"
+      summary: "Service information"
+      description: "return information about the questionnaire"
+      operationId: "infoService"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Service"
+        400:
+          description: "Invalid request"
+  /api/service/direct:
+    get:
+      tags:
+      - "service"
+      summary: "Service type - direct"
+      description: "Returns information about the form fields of the questionnaire"
+      operationId: "directService"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Service"
+        400:
+          description: "Invalid request"
+  /api/service/electronic:
+    get:
+      tags:
+      - "service"
+      summary: "Service type - electronic"
+      description: "Returns information about the form fields of the questionnaire"
+      operationId: "electronicService"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Service"
+        400:
+          description: "Invalid request"
+definitions:
+  Service:
+    type: "object"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
